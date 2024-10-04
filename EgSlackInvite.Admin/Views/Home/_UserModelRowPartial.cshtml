@@ -1,0 +1,21 @@
+﻿@model UserModel
+
+
+<tr>
+    <td>
+        @Html.CheckBoxFor(i => Model.IsWhiteListed)
+        @Html.HiddenFor(i => Model.IsWhiteListed)
+    </td>
+    <td>
+        @Html.DisplayFor(i => Model.Id)
+        @Html.HiddenFor(i => Model.Id)
+    </td>
+    <td>
+        @Html.DisplayFor(i => Model.UserName)
+        @Html.HiddenFor(i => Model.UserName)
+    </td>
+    <td>
+        @Html.DisplayFor(i => Model.Email)
+        @Html.HiddenFor(i => Model.Email)
+    </td>
+</tr>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EgSlackInvite.CloudProvider": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

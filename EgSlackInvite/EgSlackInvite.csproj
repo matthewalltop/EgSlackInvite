@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Services\Concrete\Strategy\**" />
+    <EmbeddedResource Remove="Services\Concrete\Strategy\**" />
+    <None Remove="Services\Concrete\Strategy\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Services\Abstract\Client\ISlackUserApiClient.cs" />
+    <Compile Remove="Services\Abstract\Service\IChatClientChannelService.cs" />
+    <Compile Remove="Services\Abstract\Service\IChatClientUIService.cs" />
+    <Compile Remove="Services\Abstract\Service\IChatClientUserService.cs" />
+    <Compile Remove="Services\Concrete\Client\SlackUserApiClient.cs" />
+    <Compile Remove="Services\Concrete\Service\SlackChatClientChannelService.cs" />
+    <Compile Remove="Services\Concrete\Service\SlackChatClientUiService.cs" />
+    <Compile Remove="Services\Concrete\Service\SlackChatClientUserService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.1.3" />
+    <PackageReference Include="Microsoft.Exchange.WebServices.NETStandard" Version="1.1.3" />
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="3.19.8" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.22" />
+    <PackageReference Include="RestSharp" Version="106.5.4" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EgSlackInvite.CloudProvider\EgSlackInvite.CloudProvider.csproj" />
+    <ProjectReference Include="..\SlackApiClient\SlackApiClient.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>

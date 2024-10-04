@@ -1,0 +1,61 @@
+﻿@model List<UserModel>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<div class="container">
+
+    @using (Html.BeginForm("UpdateUsers", "Home", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Authorized</td>
+                    <td>Opted-In</td>
+                    <td>Slack UID</td>
+                    <td>DisplayName</td>
+                    <td>Email</td>
+                </tr>
+            </thead>
+            <tbody>
+                @for (var i = 0; i < Model.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Html.CheckBoxFor(item => Model[i].IsWhiteListed)
+                            @*@Html.HiddenFor(item => Model[i].IsWhiteListed)*@
+                        </td>
+                        <td>
+                            @Html.CheckBoxFor(item => Model[i].ReceivesEmail)
+                            @*@Html.HiddenFor(item => Model[i].ReceivesEmail)*@
+                        </td>
+                        <td>
+                            @Html.DisplayFor(item => Model[i].Id)
+                            @Html.HiddenFor(item => Model[i].Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(item => Model[i].UserName)
+                            @Html.HiddenFor(item => Model[i].UserName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(item => Model[i].Email)
+                            @Html.HiddenFor(item => Model[i].Email)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="">
+            <input type="submit" class="btn btn-primary" value="Submit" />
+        </div>
+    }
+</div>
+
+<script>
+
+
+
+</script>

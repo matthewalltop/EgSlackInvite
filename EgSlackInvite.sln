@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EgSlackInvite", "EgSlackInvite\EgSlackInvite.csproj", "{EF101EE3-6DCB-4EAC-AF3A-B38B7550ACF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EgSlackInvite.Test", "EgSlackInvite.Test\EgSlackInvite.Test.csproj", "{F0A5A9EA-3709-4E95-833E-8E1561D2E867}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EgSlackInvite.Admin", "EgSlackInvite.Admin\EgSlackInvite.Admin.csproj", "{267C7589-D572-4F08-95F2-2B4E6ABF495A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlackApiClient", "SlackApiClient\SlackApiClient.csproj", "{4DD90692-B829-4BA1-8611-D6289C430CA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EgSlackInvite.CloudProvider", "EgSlackInvite.CloudProvider\EgSlackInvite.CloudProvider.csproj", "{F7D341BC-B517-412E-BDEC-1A2FD56157EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackApiClient.Test", "SlackApiClient.Test\SlackApiClient.Test.csproj", "{EE34273C-BC9C-4553-A2CE-58F25D0DCC71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF101EE3-6DCB-4EAC-AF3A-B38B7550ACF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF101EE3-6DCB-4EAC-AF3A-B38B7550ACF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF101EE3-6DCB-4EAC-AF3A-B38B7550ACF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF101EE3-6DCB-4EAC-AF3A-B38B7550ACF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0A5A9EA-3709-4E95-833E-8E1561D2E867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0A5A9EA-3709-4E95-833E-8E1561D2E867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0A5A9EA-3709-4E95-833E-8E1561D2E867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0A5A9EA-3709-4E95-833E-8E1561D2E867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{267C7589-D572-4F08-95F2-2B4E6ABF495A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267C7589-D572-4F08-95F2-2B4E6ABF495A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267C7589-D572-4F08-95F2-2B4E6ABF495A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267C7589-D572-4F08-95F2-2B4E6ABF495A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD90692-B829-4BA1-8611-D6289C430CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD90692-B829-4BA1-8611-D6289C430CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD90692-B829-4BA1-8611-D6289C430CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD90692-B829-4BA1-8611-D6289C430CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7D341BC-B517-412E-BDEC-1A2FD56157EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D341BC-B517-412E-BDEC-1A2FD56157EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D341BC-B517-412E-BDEC-1A2FD56157EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D341BC-B517-412E-BDEC-1A2FD56157EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE34273C-BC9C-4553-A2CE-58F25D0DCC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE34273C-BC9C-4553-A2CE-58F25D0DCC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE34273C-BC9C-4553-A2CE-58F25D0DCC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE34273C-BC9C-4553-A2CE-58F25D0DCC71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEAB7708-C0E8-4AB3-A9BD-ED12242F3663}
+	EndGlobalSection
+EndGlobal
