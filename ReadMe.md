@@ -1,4 +1,6 @@
-﻿# Slack Meeting Invite
+Created in 2018
+
+# Slack Meeting Invite
 
 This project provides a means to integrate Outlook meeting creation with Slack.
 
